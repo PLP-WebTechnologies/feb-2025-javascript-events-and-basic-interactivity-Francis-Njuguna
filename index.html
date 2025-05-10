@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Event Handling Section -->
+        <section class="events-section">
+            <h2>Event Handling 🎈</h2>
+            <button id="clickBtn">Click Me!</button>
+            <div id="hoverBox">Hover over me</div>
+            <input type="text" id="keyInput" placeholder="Type something...">
+            <div id="secretBtn" ondblclick="handleSecret()">Double click for a surprise 🤫</div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements 🎮</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="1">Tab 1</button>
+                <button class="tab-btn" data-tab="2">Tab 2</button>
+                <button class="tab-btn" data-tab="3">Tab 3</button>
+            </div>
+            <div class="tab-content active" id="tab1">Content 1</div>
+            <div class="tab-content" id="tab2">Content 2</div>
+            <div class="tab-content" id="tab3">Content 3</div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="form-section">
+            <h2>Form Validation 📋</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <span class="feedback"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <span class="feedback"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="feedback"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
